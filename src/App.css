@@ -1,4 +1,5 @@
 .slider {
+  margin-top: -245px;
   position: relative;
   height: 100vh;
   display: flex;
@@ -7,16 +8,16 @@
 }
 
 .image {
-  width: 800px;
-  height: 400px;
+  width: 1200px;
+  height: 380px;
   border-radius: 10px;
 }
 
 .right-arrow {
   position: absolute;
   top: 50%;
-  right: 32px;
-  font-size: 3rem;
+  right: 150px;
+  font-size: 4rem;
   color: #000;
   z-index: 10;
   cursor: pointer;
@@ -26,8 +27,8 @@
 .left-arrow {
   position: absolute;
   top: 50%;
-  left: 32px;
-  font-size: 3rem;
+  left: 150px;
+  font-size: 4rem;
   color: #000;
   z-index: 10;
   cursor: pointer;
@@ -43,4 +44,37 @@
   opacity: 1;
   transition-duration: 1s;
   transform: scale(1.08);
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 20px, 20px;
+  grid-template-rows: 100px 100px;
+  grid-gap: 20px;
+  
+  
+  align-items: center;
+
+}
+
+.blink {
+  animation: blinker 2s step-start infinite;
+  align-items: left;
+  text-decoration:underline;
+}
+
+
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
+
+.imageCons {
+  margin:-208px 20px -47px -550px ;
+}
+
+.blinkPosi {
+  margin:20px -460px -20px 20px ;
 }
